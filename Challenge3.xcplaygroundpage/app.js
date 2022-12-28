@@ -19,15 +19,27 @@
  * 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89 y 97.
  */
 
-let esPrimo = false
 
-for(let numero = 0; numero <= 100; numero++){
-     if(numero / 2 == 1){
-          esPrimo = true
-          console.log( ` el ${numero} es primo.`, numero/2 );
+let numeroPrimo = 4;
+
+let esPrimo = true;
+
+
+     for(let i = 2; i < numeroPrimo/2; i++)
+     {
+          if(numeroPrimo % i === 0){
+               esPrimo = false;
+          }
      }
+
      
-}
+     if(esPrimo){
+          console.log(`el ${numeroPrimo} es un numero primo`);
+     }else{
+          console.log(`el ${numeroPrimo} no es un numero primo`);
+     }
+
+
 
 
 
