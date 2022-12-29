@@ -20,10 +20,11 @@
  */
 
 
-let numeroPrimo = 4;
+let numeroPrimo = 0;
 
 let esPrimo = true;
 
+const identificarNumeroPrimo = (numeroPrimo)=>{
 
      for(let i = 2; i < numeroPrimo/2; i++)
      {
@@ -31,15 +32,18 @@ let esPrimo = true;
                esPrimo = false;
           }
      }
-
+     
      
      if(esPrimo){
           console.log(`el ${numeroPrimo} es un numero primo`);
      }else{
           console.log(`el ${numeroPrimo} no es un numero primo`);
      }
+     
+}
 
 
+identificarNumeroPrimo(98);
 
 
 
